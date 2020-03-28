@@ -1,0 +1,9 @@
+V:\projects\cs\FunWithExcel\FunWithExcel\obj\Debug\FunWithExcel.csprojAssemblyReference.cache
+V:\projects\cs\FunWithExcel\FunWithExcel\obj\Debug\FunWithExcel.Form1.resources
+V:\projects\cs\FunWithExcel\FunWithExcel\obj\Debug\FunWithExcel.Properties.Resources.resources
+V:\projects\cs\FunWithExcel\FunWithExcel\obj\Debug\FunWithExcel.csproj.GenerateResource.cache
+V:\projects\cs\FunWithExcel\FunWithExcel\bin\Debug\FunWithExcel.exe.config
+V:\projects\cs\FunWithExcel\FunWithExcel\bin\Debug\FunWithExcel.exe
+V:\projects\cs\FunWithExcel\FunWithExcel\bin\Debug\FunWithExcel.pdb
+V:\projects\cs\FunWithExcel\FunWithExcel\obj\Debug\FunWithExcel.exe
+V:\projects\cs\FunWithExcel\FunWithExcel\obj\Debug\FunWithExcel.pdb
