@@ -39,16 +39,20 @@ namespace FunWithExcel
 
                 OleDbConnection con = new System.Data.OleDb.OleDbConnection(connectionString);
                 con.Open(); 
+               
                 DataTable schemaTable = con.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, new object[] { null, null, null, "TABLE" });
+                schemaTable.Locale = CultureInfo.CurrentCulture;
                 DataRow schemaRow = schemaTable.Rows[0]; 
                 string sheet = schemaRow["TABLE_NAME"].ToString(); 
                 
-                if (!sheet.EndsWith("_")) { string query = "SELECT * FROM [" + sheet + "]"; 
+                if (!sheet.EndsWith("_")) {
+                    string query = "SELECT * FROM [" + sheet + "]"; 
                     OleDbDataAdapter daexcel = new OleDbDataAdapter(query, con);
-                    schemaTable.Locale = CultureInfo.CurrentCulture;
+                   
                     daexcel.Fill(schemaTable);
                        
                     DataSet ds = new DataSet();
+                    ds.Locale = CultureInfo.CurrentCulture;
                     ds.Tables.Add(schemaTable);
                     int c = 0;
                     foreach (DataTable dt in ds.Tables)
